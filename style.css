@@ -1,0 +1,125 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+.main{
+  width:100%;
+  height:100vh;
+  background-color:#12aff3;
+  display: flex;
+  flex-direction:column ;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+.name{
+  font-size: 30px;
+  height: 45px;
+  width: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  background-color: #096386;
+  color: white;
+}
+.box{
+  height: 70%;
+  width: 50%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 10px;
+}
+input{
+  color: white;
+  margin-top: 5px;
+  border-radius: 5px;
+  border: none;
+  font-size: 20px;
+  background-color:#42add7;
+  width: 90%;
+  height: 40px;
+}
+ input::placeholder{
+   color: white;
+ }
+.todobox{
+  width: 90%;
+  height:70%;
+  padding: 0px;
+  overflow-y:auto;
+}
+.todobox::-webkit-scollbar{
+  display: none;
+}
+button{
+  margin-bottom: 10px;
+  background-color:#1b576f;
+  color: white;
+  height: 25px;
+  width: 30%;
+  border-radius: 6px;
+}
+button:hover{
+  cursor: pointer;
+  font-size: 14px;
+}
+.info{
+  margin-top: 10px;
+  font-size: 20px;
+  height:30px;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  background-color: #3782a0;
+  color: white;
+}
+ 
+.work{
+   width: 90%;
+   height: 30px;
+  background-color: #5a5353;
+  list-style: none;
+  margin: auto;
+  font-size: 16px;
+  color: white;
+  border-radius: 5px;
+  display:flex;
+  align-items: center;
+  padding-left: 3px;
+  text-align: justify;
+  position: relative;
+  margin-top: 10px;
+  user-select: none;
+}
+ul li i{
+  position: absolute;
+  right: 1px;
+  top: 1px;
+}
+ul li i:hover{
+  cursor: pointer;
+}
+.done{
+  background-color:#e6e0e0;
+  text-decoration: line-through;
+}
+@media screen and (max-width:600px){
+   
+  button{
+    height: 25px;
+    text-align: center;
+     font-size: 8px;
+  }
+}
+@media screen and (min-height:1000px){
+  .box{
+    height: 45%;
+    width: 60%;
+  }
+  
+}
